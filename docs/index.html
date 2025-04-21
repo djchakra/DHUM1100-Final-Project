@@ -1,120 +1,241 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>The Choice</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-        #story {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #666;
-        }
-        .passage {
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div id="story">
-        <div id="start" class="passage">
-            <h1>The Fatal Choice</h1>
-            <p>In a kingdom ruled by a passionate and semi-barbaric king, a young man finds himself in an impossible predicament. He has fallen in love with the king's daughter, a fierce and tempestuous princess who returns his love with equal intensity.</p>
-            <p>The king, known for his cruel justice, has a unique method of trial. When an accused lover is brought before him, they are placed in an arena with two doors. Behind one door lies a beautiful maiden who would become the prisoner's wife if he chooses that door. Behind the other door lurks a ferocious tiger that would instantly tear the prisoner to pieces.</p>
-            <p>The prisoner must choose one of the two doors, with no guidance except his own intuition.</p>
-            <p>Now, it is your turn to make the choice.</p>
-            <p>
-                <a href="#left-door">Choose the Left Door</a> | 
-                <a href="#right-door">Choose the Right Door</a>
-            </p>
-        </div>
+# The Lady or the Tiger: A Twine Adaptation
 
-        <div id="left-door" class="passage">
-            <h2>The Left Door</h2>
-            <p>You approach the left door, your heart racing. The princess has been watching you intently, her eyes burning with a mix of love and something darker—a possessive, primal emotion.</p>
-            <p>In the moments before your choice, she subtly indicates the left door. But does she truly wish you to live with another woman, or has she orchestrated something more sinister?</p>
-            <p>
-                <a href="#left-door-maiden">Open the Left Door</a> | 
-                <a href="#reconsider">Reconsider Your Choice</a>
-            </p>
-        </div>
+## Node 1: Introduction
+In a kingdom long ago, ruled by a semi-barbaric king, justice was delivered in a most unusual way. When someone was accused of a crime, they would face a public trial in the arena. There, they would have to choose between two identical doors. Behind one door waited a ferocious tiger; behind the other, a beautiful lady. Death or marriage - fate would decide their guilt or innocence.
 
-        <div id="left-door-maiden" class="passage">
-            <h2>Behind the Left Door</h2>
-            <p>The door swings open, revealing a stunning maiden—young, beautiful, and clearly prepared to become your wife. But something feels wrong. Is this truly the princess's wish?</p>
-            <p>
-                <a href="#maiden-ending">Accept Your New Life</a> | 
-                <a href="#doubt-ending">Reject the Maiden</a>
-            </p>
-        </div>
+→ [Continue](#node-2)
 
-        <div id="right-door" class="passage">
-            <h2>The Right Door</h2>
-            <p>You turn toward the right door, sensing its ominous presence. The princess's gaze is intense, inscrutable. Does she truly love you enough to spare you, or is her jealousy more profound?</p>
-            <p>
-                <a href="#right-door-tiger">Open the Right Door</a> | 
-                <a href="#reconsider">Reconsider Your Choice</a>
-            </p>
-        </div>
+## Node 2: The Princess and the Lover
+You are a young courtier who has fallen deeply in love with the king's beautiful daughter. Your meetings have been secret, your whispers hushed, your touches fleeting. But in this kingdom, walls have ears, and it wasn't long before word reached the king about your forbidden romance.
 
-        <div id="right-door-tiger" class="passage">
-            <h2>Behind the Right Door</h2>
-            <p>The massive door creaks open. A terrifying roar erupts—the tiger, massive and hungry, leaps toward you.</p>
-            <p>
-                <a href="#tiger-ending">Face Your Fate</a>
-            </p>
-        </div>
+→ [Continue](#node-3)
 
-        <div id="reconsider" class="passage">
-            <h2>Moment of Hesitation</h2>
-            <p>You pause, overwhelmed by the weight of your decision. The princess watches, her expression unreadable.</p>
-            <p>
-                <a href="#start">Return to the Beginning</a>
-            </p>
-        </div>
+## Node 3: The King's Wrath
+The king, upon discovering your relationship with his daughter, is furious. In his eyes, you have committed a grave crime by daring to love someone above your station. He orders your immediate arrest and announces that you will face trial in the arena, like any other criminal in his kingdom.
 
-        <div id="maiden-ending" class="passage">
-            <h2>A New Life</h2>
-            <p>You accept the maiden, but something feels hollow. Did the princess truly want this? Or is this a more elaborate form of punishment?</p>
-            <p>ENDING: The Unexpected Bride</p>
-            <p>
-                <a href="#start">Play Again</a>
-            </p>
-        </div>
+→ [Continue](#node-4)
 
-        <div id="doubt-ending" class="passage">
-            <h2>Rejecting Fate</h2>
-            <p>You refuse the maiden, sensing a deeper complexity to your situation. But what consequences await?</p>
-            <p>ENDING: The Defiant Choice</p>
-            <p>
-                <a href="#start">Play Again</a>
-            </p>
-        </div>
+## Node 4: The Prison
+You spend three days in the dark dungeons beneath the palace. The stone walls weep with moisture, and the only light comes from a small barred window high above. You have heard stories of the arena trials - the roar of the tiger, the gasp of the crowd, the bewildered joy of those who open the door to find a bride instead of death.
 
-        <div id="tiger-ending" class="passage">
-            <h2>The Fatal Moment</h2>
-            <p>The tiger's fury is unleashed. In the princess's eyes, you see a mixture of love, possessiveness, and an ancient, primal emotion that transcends life and death.</p>
-            <p>ENDING: The Savage Fate</p>
-            <p>
-                <a href="#start">Play Again</a>
-            </p>
-        </div>
-    </div>
-</body>
-</html>
+→ [Think about the princess](#node-5)
+→ [Think about your fate](#node-6)
+
+## Node 5: Thoughts of the Princess
+In your cold cell, thoughts of the princess keep you warm. You remember her smile, the scent of jasmine in her hair, the way her eyes light up when she laughs. You wonder if she knows about your trial. You wonder if she will be there to witness it. Most of all, you wonder if there is anything she can do to help you.
+
+→ [Continue](#node-7)
+
+## Node 6: Contemplating Fate
+You pace your cell, considering what awaits you. Two doors. A tiger or a lady. Death or a bride not of your choosing. The king's justice is cruel in its simplicity - you will lose either way. You will either die or be forced to marry someone other than the woman you love. But which is worse? And do you truly have no say in your fate?
+
+→ [Continue](#node-7)
+
+## Node 7: A Secret Visit
+On the night before your trial, there's a soft sound at your cell door. A hooded figure slips inside - it's the princess! Her face is pale with worry, her eyes red from crying.
+
+"My love," she whispers, "my father is determined to see you punished. But I have bribed the guards who prepare the arena. I know which door hides the tiger and which hides the lady."
+
+→ [Ask about the tiger](#node-8)
+→ [Ask about the lady](#node-9)
+
+## Node 8: The Tiger
+"Tell me about the tiger," you say, your voice steady despite your fear.
+
+The princess's face darkens. "It is the most ferocious beast in the royal menagerie. They have been starving it for days to ensure its savagery. If you open its door..." She cannot finish the sentence, but you understand.
+
+→ [Ask about the lady](#node-9)
+
+## Node 9: The Lady
+"And the lady?" you ask. "Who has been chosen?"
+
+The princess's eyes flash with sudden anger. "It is Lady Cassandra, the one with golden hair who always watches you during court functions. She has made no secret of her admiration for you." Her voice drops to a bitter whisper. "She would be all too happy to become your bride."
+
+→ [Continue](#node-10)
+
+## Node 10: The Princess's Dilemma
+You can see the conflict raging within the princess. If she guides you to the door with the lady, she will lose you to another woman. If she guides you to the tiger, she will lose you to death. Either way, you will be taken from her.
+
+"Tomorrow, when you stand in the arena," she says, "I will be seated by my father's side. I will signal to you which door to choose."
+
+→ [Trust her completely](#node-11)
+→ [Express doubt](#node-12)
+
+## Node 11: Complete Trust
+"I trust you with my life," you tell her, taking her hands in yours. "Whatever you decide, I know it will be out of love."
+
+The princess kisses you deeply, tears streaming down her face. "Remember," she whispers as she leaves, "watch for my signal."
+
+→ [The day of the trial](#node-13)
+
+## Node 12: Expressing Doubt
+"How do I know which choice you'll make?" you ask. "Will your love for me outweigh your jealousy? Or would you rather see me dead than with another?"
+
+Pain flashes across the princess's face. "You doubt my love?" she asks, pulling away from you. "After all we've risked?"
+
+"I don't doubt your love," you reply. "I question what love might drive you to do."
+
+She leaves without another word, her back rigid with hurt.
+
+→ [The day of the trial](#node-13)
+
+## Node 13: The Day of the Trial
+The arena is packed with spectators eager to witness your fate. The sun beats down mercilessly as you are led to the center of the sandy circle. The king sits on his elevated throne, his face impassive. Beside him sits the princess, her face a carefully composed mask.
+
+From where you stand, you can see the two identical doors, heavy oak banded with iron. Behind one waits a lady. Behind the other waits a tiger.
+
+→ [Look at the crowd](#node-14)
+→ [Look at the king](#node-15)
+→ [Look at the princess](#node-16)
+
+## Node 14: The Crowd
+You scan the faces in the crowd. Some look eager for blood, others hopeful for romance. You recognize a few courtiers who once called you friend but now watch your plight with detached curiosity. This is entertainment for them - the highest drama the kingdom offers. Your life or death, your happiness or misery, is merely the day's spectacle.
+
+→ [Look at the king](#node-15)
+→ [Look at the princess](#node-16)
+
+## Node 15: The King
+You raise your eyes to the king. His face betrays no emotion, but you can feel his satisfaction. This is his justice - a system that leaves the final decision to fate while giving him the pleasure of watching the accused squirm. He has arranged everything: the tiger, the lady, the choice. Everything except one crucial element - his daughter's intervention.
+
+→ [Look at the princess](#node-16)
+
+## Node 16: The Princess
+Finally, you turn to the princess. She sits beside her father, outwardly calm, but you know her well enough to see the storm raging behind her eyes. When your gazes meet, the rest of the arena seems to fade away. In this moment, it is just the two of you, caught in an impossible situation not of your making.
+
+→ [Wait for her signal](#node-17)
+
+## Node 17: The Signal
+The crowd falls silent as you and the princess lock eyes. The moment stretches like an eternity. Then, almost imperceptibly, she moves her right hand, gesturing toward the door on the right.
+
+The signal is clear. She wants you to choose the right door.
+
+→ [Choose the right door](#node-18)
+→ [Choose the left door](#node-19)
+→ [Refuse to choose](#node-20)
+
+## Node 18: The Right Door
+Trusting in the princess's love, you walk steadily toward the right-hand door. The crowd holds its breath as your hand reaches for the handle. With one last look at the princess, whose face is now drained of all color, you pull open the door.
+
+What happens next comes in a blur of motion and sound. There's a collective gasp from the crowd. The princess rises from her seat. The king leans forward in anticipation.
+
+From the darkness beyond the door emerges...
+
+→ [The tiger approaches (Ending 1)](#node-26)
+→ [The lady appears (Ending 2)](#node-27)
+
+## Node 19: The Left Door
+Something in the princess's eyes makes you doubt her signal. Perhaps she couldn't bear to see you with another woman. Perhaps her jealousy has overcome her love. You decide to choose the opposite door from the one she indicated.
+
+With determined steps, you walk to the left-hand door. The crowd murmurs in surprise, and when you glance up, you see shock on the princess's face. Your hand on the handle, you pull open the door.
+
+The crowd's reaction is immediate - cries of surprise, shock, awe. The princess's hands fly to her mouth. The king stands from his throne.
+
+From the darkness beyond the door emerges...
+
+→ [The tiger approaches (Ending 1)](#node-26)
+→ [The lady appears (Ending 2)](#node-27)
+
+## Node 20: Refusing to Choose
+In a moment of defiance, you shake your head and stand your ground. You will not choose either door. You will not play the king's game of chance and fate.
+
+"I choose neither door," you announce, your voice echoing through the suddenly silent arena. "If I am to be judged, let it be by my actions, not by arbitrary chance."
+
+The crowd murmurs. The king rises from his seat, his face dark with anger at this disruption of his system.
+
+→ [Continue](#node-21)
+
+## Node 21: The King's Challenge
+"You dare to defy the system of justice that has served this kingdom for generations?" the king bellows. "Very well. I offer you a third option. Face me in combat. If you win, you go free. If you lose, you die by my hand, not the tiger's."
+
+The crowd roars with excitement at this unprecedented turn of events.
+
+→ [Accept the challenge](#node-22)
+→ [Choose a door after all](#node-17)
+
+## Node 22: The Duel
+Guards bring forth swords. The king descends from his throne, removing his heavy robes to reveal the physique of a warrior king. He may be older, but he is still formidable.
+
+You take your sword, testing its weight. The crowd forms a circle around you and the king, spectators to this new form of justice.
+
+→ [Fight defensively](#node-23)
+→ [Fight aggressively](#node-24)
+
+## Node 23: Defensive Strategy
+You choose to fight defensively, watching the king's moves, looking for weaknesses. He attacks with fury, but as the duel progresses, his strength begins to wane. His breathing becomes labored, his strikes less precise.
+
+When he lunges forward, overextending himself, you see your opportunity. With a quick move, you disarm him, sending his sword spinning across the sand.
+
+The king kneels before you, defeated, waiting for the killing blow.
+
+→ [Spare the king (Ending 3)](#node-28)
+
+## Node 24: Aggressive Strategy
+You attack with all your might, driving the king back with the fury of your strikes. The crowd gasps as you press your advantage, your blade a blur of motion.
+
+But the king is cunning. He feigns weakness, then counters with unexpected strength. His sword finds its mark, slicing into your side.
+
+As you fall to your knees, the king stands over you triumphant. But before he can deliver the fatal blow, a voice rings out across the arena.
+
+"Father, stop!"
+
+The princess rushes down from her seat, placing herself between you and the king's sword.
+
+→ [The princess's intervention (Ending 3)](#node-28)
+
+## Node 25: Hidden Path
+*This node is accessible through special choices*
+
+As you stand in the arena, something catches your eye - a small, almost invisible third door, built into the wall between the other two. It appears to have been recently added, its edges still fresh with new mortar.
+
+Could this be the princess's doing? A third option where neither death nor forced marriage awaits?
+
+→ [Open the secret door (Ending 3)](#node-28)
+
+## Node 26: The Tiger (Ending 1)
+A deafening roar fills the arena as the massive tiger bursts through the doorway. Its amber eyes lock onto you, its powerful muscles tensing for the attack. In that final moment, you look up at the princess.
+
+Is that relief on her face? Or is it anguish? You'll never know, for in the next instant, the tiger is upon you.
+
+The crowd's roar matches the tiger's as your fate is sealed. Death has chosen you, marking you guilty in the eyes of the kingdom.
+
+And the princess? She will live with her choice forever, never knowing if she made the right one. In the years to come, she will rule the kingdom with a hard, cold justice that reminds many of her father. But late at night, alone in her chambers, she still dreams of you, still wonders what might have been if jealousy and love hadn't waged such a terrible war within her heart.
+
+Some say that on the anniversary of your death, she visits the arena alone, standing between two doors, forever making the choice again and again.
+
+**THE END**
+
+→ [Start Over](#node-1)
+
+## Node 27: The Lady (Ending 2)
+The door swings open to reveal a beautiful young woman. Lady Cassandra stands there in a wedding gown, her golden hair adorned with flowers, her blue eyes wide with surprise and pleasure at the sight of you.
+
+The crowd erupts in cheers. You have been deemed innocent by fate, spared from death, but sentenced to a different kind of loss.
+
+As the priest steps forward to perform the immediate ceremony, you glance up at the princess. Her face is a mask of composure, but her eyes burn with an emotion you cannot name. Is it relief that you're alive? Or the agony of seeing you wed another?
+
+The years pass. You and Lady Cassandra build a life together, and in time, find a measure of happiness. The princess eventually marries a foreign prince, securing an alliance for her kingdom. Whenever you see her at court functions, there passes between you a look of what might have been.
+
+Once a year, on the anniversary of your trial, you receive an anonymous gift - a small carving of a tiger. A reminder of the choice she made, the door she guided you to, the life she granted you, even at the cost of her own happiness.
+
+**THE END**
+
+→ [Start Over](#node-1)
+
+## Node 28: The Third Path (Ending 3)
+The arena falls silent. Everyone waits for what will happen next. The king's system of justice has never been challenged before, and now a new path opens before you all.
+
+Whether through combat, defiance, or secret preparation, you have found a way beyond the binary choice of the tiger or the lady. You have broken the cycle of the king's barbaric justice.
+
+The princess steps forward, her voice clear and strong: "Father, can you not see? Love cannot be judged by your doors. It creates its own paths."
+
+The king looks at his daughter, then at you, and something shifts in his expression - pride mingles with resignation.
+
+"Perhaps," he says finally, "it is time for new ways."
+
+In the days that follow, the doors in the arena are permanently sealed. The princess and you are allowed to marry, and when the old king eventually passes, a new era of justice begins in the kingdom - one where love proves stronger than ancient barbarism, where choices are not limited to death or unwanted life, where people create their own fates rather than accepting what doors stand before them.
+
+And whenever anyone asks the princess why she changed the kingdom's laws, she simply smiles and says, "Because sometimes, there is a third door that no one else can see."
+
+**THE END**
+
+→ [Start Over](#node-1)
